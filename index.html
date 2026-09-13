@@ -6,39 +6,39 @@
 <title>Verse & prayer times, Toronto</title>
 <meta name="description" content="A daily verse from the Quran and today's prayer times for Toronto.">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    /* Typeface is a placeholder until we agree on one. Swap --serif only. */
-    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    --sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --arabic: "Amiri", "Scheherazade New", "Noto Naskh Arabic", serif;
     --bg: #fdfdfb;
-    --muted: #9a9a94;   /* prose */
+    --muted: #8e8e88;   /* prose */
     --ink: #1a1a18;     /* live data */
     --rule: #d9d9d2;    /* dotted underline */
-    --size: clamp(1.25rem, 1rem + 1.1vw, 1.65rem);
+    --size: clamp(1.15rem, 0.95rem + 1vw, 1.5rem);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #131311; --muted: #7b7b74; --ink: #efefe9; --rule: #3a3a35; }
+    :root { --bg: #131311; --muted: #80807a; --ink: #efefe9; --rule: #3a3a35; }
   }
   * { box-sizing: border-box; }
   html { background: var(--bg); }
   body {
     margin: 0;
-    font-family: var(--serif);
+    font-family: var(--sans);
     font-size: var(--size);
-    line-height: 1.55;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
     color: var(--muted);
     -webkit-font-smoothing: antialiased;
   }
   main {
-    max-width: 36em;
+    max-width: 34em;
     margin: 0 auto;
     padding: clamp(2.5rem, 8vh, 6rem) clamp(1.25rem, 5vw, 2.5rem) 5rem;
   }
   p { margin: 0 0 1.4em; }
   p:last-child { margin-bottom: 0; }
-  b { font-weight: 400; color: var(--ink); }
+  b { font-weight: 500; color: var(--ink); }
   .ar { font-family: var(--arabic); direction: rtl; unicode-bidi: isolate; }
   .greeting .ar { font-size: 1.15em; }
   u {

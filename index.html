@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verse & prayer times, Toronto</title>
+<meta name="description" content="A daily verse from the Quran and today's prayer times for Toronto.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Typeface is a placeholder until we agree on one. Swap --serif only. */
+    --serif: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+    --arabic: "Amiri", "Scheherazade New", "Noto Naskh Arabic", serif;
+    --bg: #fdfdfb;
+    --muted: #9a9a94;   /* prose */
+    --ink: #1a1a18;     /* live data */
+    --rule: #d9d9d2;    /* dotted underline */
+    --size: clamp(1.25rem, 1rem + 1.1vw, 1.65rem);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131311; --muted: #7b7b74; --ink: #efefe9; --rule: #3a3a35; }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: var(--size);
+    line-height: 1.55;
+    color: var(--muted);
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 8vh, 6rem) clamp(1.25rem, 5vw, 2.5rem) 5rem;
+  }
+  p { margin: 0 0 1.4em; }
+  p:last-child { margin-bottom: 0; }
+  b { font-weight: 400; color: var(--ink); }
+  .ar { font-family: var(--arabic); direction: rtl; unicode-bidi: isolate; }
+  .greeting .ar { font-size: 1.15em; }
+  u {
+    text-decoration: underline dotted var(--rule);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: .22em;
+  }
+  .verse-ar {
+    font-family: var(--arabic);
+    font-size: 1.55em;
+    line-height: 1.9;
+    direction: rtl;
+    text-align: right;
+    color: var(--ink);
+    margin: .4em 0 .6em;
+  }
+  .verse-en { color: var(--ink); }
+  .source { font-size: .8em; }
+  .pending { opacity: .45; }
+  a { color: inherit; }
+  @media (prefers-reduced-motion: no-preference) {
+    b { transition: opacity .25s ease; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="greeting">As-salamu alaykum <span class="ar">ٱلسَّلَامُ عَلَيْكُمْ</span></p>
+
+  <p>Today is <b id="greg" class="pending">…</b> which is also <b id="hijri" class="pending">…</b>.
+     It is currently <b id="clock" class="pending">…</b> in Toronto.
+     The temperature <span id="temp-lead">today is</span> <b id="temp" class="pending">…</b>.
+     Sunrise <span id="sunrise-verb">is</span> at <b id="sunrise" class="pending">…</b> and
+     sunset <span id="sunset-verb">is</span> at <b id="sunset" class="pending">…</b>.</p>
+
+  <p id="salah">Loading prayer times…</p>
+
+  <p>Today's verse is <b><u id="ref" class="pending">…</u></b>, <span id="surah">…</span>.</p>
+  <p class="verse-ar" id="ar"></p>
+  <p class="verse-en" id="en"></p>
+  <p class="source" id="src"></p>
+</main>
+
+<script>
+(async () => {
+  const TZ = "America/Toronto";
+  const $ = id => document.getElementById(id);
+  const set = (id, text) => { const el = $(id); el.textContent = text; el.classList.remove("pending"); };
+  const now = () => new Date();
+  const fmtTime = d => d.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit", timeZone: TZ });
+  const fmtDate = d => d.toLocaleDateString("en-CA", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: TZ });
+  const torontoDMY = d => {
+    const p = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, day: "2-digit", month: "2-digit", year: "numeric" }).formatToParts(d);
+    const g = t => p.find(x => x.type === t).value;
+    return `${g("day")}-${g("month")}-${g("year")}`;
+  };
+  const PRAYERS = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+
+  // Clock
+  const tick = () => set("clock", fmtTime(now()));
+  tick(); setInterval(tick, 10_000);
+  set("greg", fmtDate(now()));
+
+  // Prayer times: today + tomorrow (for the after-Isha case). ISNA = method 2.
+  const aladhan = async d => {
+    const r = await fetch(`https://api.aladhan.com/v1/timingsByCity/${torontoDMY(d)}?city=Toronto&country=Canada&method=2&iso8601=true`);
+    if (!r.ok) throw new Error(`Aladhan ${r.status}`);
+    return (await r.json()).data;
+  };
+  try {
+    const t = now(), tomorrowDate = new Date(t.getTime() + 864e5);
+    const [today, tomorrow] = await Promise.all([aladhan(t), aladhan(tomorrowDate)]);
+    const h = today.date.hijri;
+    set("hijri", `${h.day} ${h.month.en} ${h.year}`);
+
+    const T = Object.fromEntries(Object.entries(today.timings).map(([k, v]) => [k, new Date(v)]));
+    const sunrise = T.Sunrise, sunset = T.Sunset;
+    set("sunrise", fmtTime(sunrise)); $("sunrise-verb").textContent = t > sunrise ? "was" : "is";
+    set("sunset", fmtTime(sunset));  $("sunset-verb").textContent  = t > sunset  ? "was" : "will be";
+
+    const renderSalah = () => {
+      const n = now();
+      const passed = PRAYERS.filter(p => T[p] <= n);
+      const current = passed.at(-1);
+      const nextName = PRAYERS.find(p => T[p] > n);
+      const nextAt = nextName ? T[nextName] : new Date(tomorrow.timings.Fajr);
+      const nextLabel = nextName || "Fajr";
+      const ms = nextAt - n, hrs = Math.floor(ms / 36e5), mins = Math.floor((ms % 36e5) / 6e4);
+      const countdown = hrs ? `${hrs}h ${mins}m` : `${mins} minute${mins === 1 ? "" : "s"}`;
+
+      let lead;
+      if (!current) lead = `Fajr has not started yet.`;
+      else if (current === "Fajr" && n > sunrise) lead = `<b>Fajr</b> time ended at sunrise.`;
+      else lead = `Currently it is <b>${current}</b>, which started at <b>${fmtTime(T[current])}</b>.`;
+      $("salah").innerHTML = `${lead} The next salah, <b>${nextLabel}</b>, starts at <b>${fmtTime(nextAt)}</b>, in <b>${countdown}</b>.`;
+    };
+    renderSalah(); setInterval(renderSalah, 30_000);
+  } catch (e) {
+    $("salah").textContent = "Prayer times are unavailable right now.";
+    console.error(e);
+  }
+
+  // Weather: Open-Meteo, no key. Toronto 43.6532, -79.3832.
+  try {
+    const r = await fetch("https://api.open-meteo.com/v1/forecast?latitude=43.6532&longitude=-79.3832&current=temperature_2m&daily=temperature_2m_max,temperature_2m_min&timezone=America%2FToronto&forecast_days=1");
+    const w = await r.json();
+    const cur = Math.round(w.current.temperature_2m);
+    const hi = Math.round(w.daily.temperature_2m_max[0]), lo = Math.round(w.daily.temperature_2m_min[0]);
+    $("temp-lead").textContent = "right now is";
+    set("temp", `${cur}°C, with a high of ${hi}° and a low of ${lo}°`);
+  } catch (e) { set("temp", "unavailable"); }
+
+  // Verse of the day, written by the GitHub Action.
+  try {
+    const v = await (await fetch(`data/verse.json?d=${torontoDMY(now())}`)).json();
+    set("ref", `${v.surah.name_simple} ${v.verse_key}`);
+    $("surah").textContent = `${v.surah.translated_name} (${v.surah.name_arabic})`;
+    $("ar").textContent = v.arabic;
+    $("en").textContent = v.translation;
+    $("src").textContent = `${v.translation_source}. Verse ${v.position.toLocaleString()} of ${v.total.toLocaleString()}.`;
+  } catch (e) {
+    set("ref", "not available yet"); $("surah").textContent = "the fetcher has not run";
+  }
+})();
+</script>
+</body>
+</html>

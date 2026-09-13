@@ -84,8 +84,10 @@ def api_get(token: str, path: str, params: dict | None = None) -> dict:
 
 
 def clean(html: str) -> str:
-    """Strip footnote markers and tags from translation text."""
-    return re.sub(r"<[^>]+>", "", html).strip()
+    """Drop footnote markers (<sup ...>1</sup>) and any other tags, tidy spaces."""
+    text = re.sub(r"<sup\b[^>]*>.*?</sup>", "", html, flags=re.S)
+    text = re.sub(r"<[^>]+>", "", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def main() -> int:

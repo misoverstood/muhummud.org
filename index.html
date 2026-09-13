@@ -5,6 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Verse & prayer times, Toronto</title>
 <meta name="description" content="A daily verse from the Quran and today's prayer times for Toronto.">
+<link rel="canonical" href="https://muhummud.org/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://muhummud.org/">
+<meta property="og:title" content="Verse &amp; prayer times, Toronto">
+<meta property="og:description" content="A daily verse from the Quran and today's prayer times for Toronto.">
+<meta property="og:image" content="https://muhummud.org/android-chrome-512x512.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#fdfdfb">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -58,6 +73,14 @@
   }
   .verse-en { color: var(--ink); }
   .source { font-size: .8em; }
+  footer {
+    max-width: 34em;
+    margin: 0 auto;
+    padding: 0 clamp(1.25rem, 5vw, 2.5rem) 3rem;
+    font-size: .7em;
+    line-height: 1.6;
+  }
+  footer a { text-decoration: underline dotted var(--rule); text-underline-offset: .2em; }
   .pending { opacity: .45; }
   a { color: inherit; }
   @media (prefers-reduced-motion: no-preference) {
@@ -82,6 +105,11 @@
   <p class="verse-en" id="en"></p>
   <p class="source" id="src"></p>
 </main>
+<footer>
+  Quran text and translation from <a href="https://quran.foundation">Quran.Foundation</a>.
+  Prayer times from <a href="https://aladhan.com">Aladhan</a>.
+  Weather from <a href="https://open-meteo.com">Open-Meteo</a>.
+</footer>
 
 <script>
 (async () => {

@@ -88,7 +88,7 @@
   const $ = id => document.getElementById(id);
   const set = (id, text) => { const el = $(id); el.textContent = text; el.classList.remove("pending"); };
   const now = () => new Date();
-  const fmtTime = d => d.toLocaleTimeString("en-CA", { hour: "numeric", minute: "2-digit", timeZone: TZ });
+  const fmtTime = d => d.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: TZ });
   const fmtDate = d => d.toLocaleDateString("en-CA", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: TZ });
   const torontoDMY = d => {
     const p = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, day: "2-digit", month: "2-digit", year: "numeric" }).formatToParts(d);

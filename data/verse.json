@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-13",
+  "verse_key": "1:1",
+  "surah": {
+    "number": 1,
+    "name_arabic": "الفاتحة",
+    "name_simple": "Al-Fatihah",
+    "translated_name": "The Opener"
+  },
+  "ayah": 1,
+  "position": 1,
+  "total": 6236,
+  "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+  "translation": "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
+  "translation_source": "Saheeh International",
+  "generated_at": "2026-09-13T23:44:29+00:00"
+}

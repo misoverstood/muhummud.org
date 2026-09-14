@@ -99,14 +99,21 @@ def main() -> int:
     surah_num = int(key.split(":")[0])
 
     token = get_token()
-    verse = api_get(
-        token,
-        f"/verses/by_key/{key}",
-        {"translations": TRANSLATION_ID, "fields": "text_indopak,text_uthmani", "translation_fields": "resource_name"},
-    )["verse"]
-    chapter = api_get(token, f"/chapters/{surah_num}", {"language": "en"})["chapter"]
+    try:
+        script = api_get(token, "/quran/verses/indopak", {"verse_key": key})["verses"][0]
+        tr_resp = api_get(token, f"/quran/translations/{TRANSLATION_ID}", {"verse_key": key})
+        tr = tr_resp["translations"][0]
+        chapter = api_get(token, f"/chapters/{surah_num}", {"language": "en"})["chapter"]
+    except (KeyError, IndexError) as e:
+        print("Unexpected API response shape:", repr(e))
+        for name in ("script", "tr_resp", "chapter"):
+            if name in locals():
+                print(name, "=", json.dumps(locals()[name], ensure_ascii=False)[:1500])
+        raise
 
-    tr = verse["translations"][0]
+    source = (tr_resp.get("meta") or {}).get("translation_name") or tr.get("resource_name") or "The Clear Quran"
+    verse_number = int(key.split(":")[1])
+
     payload = {
         "date": today.isoformat(),
         "verse_key": key,
@@ -116,13 +123,13 @@ def main() -> int:
             "name_simple": chapter["name_simple"],
             "translated_name": chapter["translated_name"]["name"],
         },
-        "ayah": verse["verse_number"],
+        "ayah": verse_number,
         "position": key_to_index(key) + 1,
         "total": TOTAL,
-        "arabic": verse.get("text_indopak") or verse["text_uthmani"],
-        "script": "indopak" if verse.get("text_indopak") else "uthmani",
+        "arabic": script["text_indopak"],
+        "script": "indopak",
         "translation": clean(tr["text"]),
-        "translation_source": tr.get("resource_name", "The Clear Quran"),
+        "translation_source": source,
         "generated_at": datetime.now(ZoneInfo("UTC")).isoformat(timespec="seconds"),
     }
 

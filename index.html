@@ -96,9 +96,9 @@
 <main>
   <p class="greeting">As-salamu alaykum <span class="ar">ٱلسَّلَامُ عَلَيْكُمْ</span></p>
 
-  <p>Today is <b id="greg" class="pending">…</b> which is also <b id="hijri" class="pending">…</b>.
-     It is currently <b id="clock" class="pending">…</b> in Toronto.
-     The temperature <span id="temp-lead">today is</span> <b id="temp" class="pending">…</b>.
+  <p>It's <b id="greg" class="pending">…</b>, or <b id="hijri" class="pending">…</b> on the Hijri calendar.
+     The time in Toronto is <b id="clock" class="pending">…</b>.
+     Outside it's <b id="temp" class="pending">…</b>.
      Sunrise <span id="sunrise-verb">is</span> at <b id="sunrise" class="pending">…</b> and
      sunset <span id="sunset-verb">is</span> at <b id="sunset" class="pending">…</b>.</p>
 
@@ -162,11 +162,12 @@
       const ms = nextAt - n, hrs = Math.floor(ms / 36e5), mins = Math.floor((ms % 36e5) / 6e4);
       const countdown = hrs ? `${hrs}h ${mins}m` : `${mins} minute${mins === 1 ? "" : "s"}`;
 
-      let lead;
-      if (!current) lead = `Fajr has not started yet.`;
-      else if (current === "Fajr" && n > sunrise) lead = `<b>Fajr</b> time ended at sunrise.`;
-      else lead = `Currently it is <b>${current}</b>, which started at <b>${fmtTime(T[current])}</b>.`;
-      $("salah").innerHTML = `${lead} The next salah, <b>${nextLabel}</b>, starts at <b>${fmtTime(nextAt)}</b>, in <b>${countdown}</b>.`;
+      const next = `<b>${nextLabel}</b> at <b>${fmtTime(nextAt)}</b>, in <b>${countdown}</b>.`;
+      let html;
+      if (!current) html = `First up is ${next}`;
+      else if (current === "Fajr" && n > sunrise) html = `<b>Fajr</b> time ended at sunrise. Next is ${next}`;
+      else html = `<b>${current}</b> began at <b>${fmtTime(T[current])}</b>. Next is ${next}`;
+      $("salah").innerHTML = html;
     };
     renderSalah(); setInterval(renderSalah, 30_000);
   } catch (e) {
@@ -179,8 +180,8 @@
     const r = await fetch("https://api.open-meteo.com/v1/forecast?latitude=43.6532&longitude=-79.3832&current=temperature_2m&daily=temperature_2m_max,temperature_2m_min&timezone=America%2FToronto&forecast_days=1");
     const w = await r.json();
     const cur = Math.round(w.current.temperature_2m);
-    const hi = Math.round(w.daily.temperature_2m_max[0]), lo = Math.round(w.daily.temperature_2m_min[0]);
-    $("temp-lead").textContent = "right now is";
+    const hi = Math.max(cur, Math.round(w.daily.temperature_2m_max[0]));
+    const lo = Math.min(cur, Math.round(w.daily.temperature_2m_min[0]));
     set("temp", `${cur}°C, with a high of ${hi}° and a low of ${lo}°`);
   } catch (e) { set("temp", "unavailable"); }
 

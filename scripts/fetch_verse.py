@@ -138,7 +138,8 @@ def main() -> int:
                 print(name, "=", json.dumps(locals()[name], ensure_ascii=False)[:1500])
         raise
 
-    source = (tr_resp.get("meta") or {}).get("translation_name") or tr.get("resource_name") or "Mufti Taqi Usmani"
+    meta = tr_resp.get("meta") or {}
+    source = meta.get("author_name") or meta.get("translation_name") or tr.get("resource_name") or "Mufti Taqi Usmani"
     verse_number = int(key.split(":")[1])
 
     payload = {

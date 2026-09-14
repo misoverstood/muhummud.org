@@ -18,9 +18,9 @@ import requests
 ENV = os.getenv("QF_ENV", "prelive")
 CLIENT_ID = os.environ["QF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["QF_CLIENT_SECRET"]
-TRANSLATION_ID = os.getenv("QF_TRANSLATION_ID")  # optional numeric override
-TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH", "usmani")  # preferred, case-insensitive name/author match (Mufti Taqi Usmani)
-TRANSLATION_FALLBACK = os.getenv("QF_TRANSLATION_FALLBACK", "saheeh")   # used if the preferred one is unavailable
+TRANSLATION_ID = os.getenv("QF_TRANSLATION_ID") or None  # optional numeric override
+TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH") or "usmani"  # preferred, case-insensitive name/author match (Mufti Taqi Usmani)
+TRANSLATION_FALLBACK = os.getenv("QF_TRANSLATION_FALLBACK") or "saheeh"   # used if the preferred one is unavailable
 OUT = Path(os.getenv("OUT_PATH", "data/verse.json"))
 
 URLS = {
@@ -55,7 +55,7 @@ def index_to_key(idx: int) -> str:
 def next_verse_key(today: date) -> str | None:
     """Advance one verse from the last run. None means today's verse is already written."""
     if not OUT.exists():
-        return index_to_key(int(os.getenv("START_INDEX", "0")))
+        return index_to_key(int(os.getenv("START_INDEX") or 0))
     prev = json.loads(OUT.read_text(encoding="utf-8"))
     if prev.get("date") == today.isoformat():
         return None

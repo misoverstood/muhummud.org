@@ -18,7 +18,8 @@ import requests
 ENV = os.getenv("QF_ENV", "prelive")
 CLIENT_ID = os.environ["QF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["QF_CLIENT_SECRET"]
-TRANSLATION_ID = int(os.getenv("QF_TRANSLATION_ID", "131"))  # 131 = Dr. Mustafa Khattab, The Clear Quran
+TRANSLATION_ID = os.getenv("QF_TRANSLATION_ID")  # optional numeric override
+TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH", "clear quran")  # case-insensitive name/author match
 OUT = Path(os.getenv("OUT_PATH", "data/verse.json"))
 
 URLS = {
@@ -83,6 +84,22 @@ def api_get(token: str, path: str, params: dict | None = None) -> dict:
     return r.json()
 
 
+def resolve_translation_id(token: str) -> int:
+    """Find the translation by name so we don't depend on quran.com's public IDs."""
+    if TRANSLATION_ID:
+        return int(TRANSLATION_ID)
+    items = api_get(token, "/resources/translations", {"language": "en"})["translations"]
+    english = [t for t in items if (t.get("language_name") or "").lower() == "english"]
+    for t in english:
+        hay = f"{t.get('name','')} {t.get('author_name','')}".lower()
+        if TRANSLATION_MATCH in hay:
+            return int(t["id"])
+    print(f"No English translation matched '{TRANSLATION_MATCH}'. Available:")
+    for t in english:
+        print(f"  {t['id']:>5}  {t.get('name')}  ({t.get('author_name')})")
+    raise SystemExit(1)
+
+
 def clean(html: str) -> str:
     """Drop footnote markers (<sup ...>1</sup>) and any other tags, tidy spaces."""
     text = re.sub(r"<sup\b[^>]*>.*?</sup>", "", html, flags=re.S)
@@ -99,9 +116,11 @@ def main() -> int:
     surah_num = int(key.split(":")[0])
 
     token = get_token()
+    translation_id = resolve_translation_id(token)
+    print(f"Using translation id {translation_id}")
     try:
         script = api_get(token, "/quran/verses/indopak", {"verse_key": key})["verses"][0]
-        tr_resp = api_get(token, f"/quran/translations/{TRANSLATION_ID}", {"verse_key": key})
+        tr_resp = api_get(token, f"/quran/translations/{translation_id}", {"verse_key": key})
         tr = tr_resp["translations"][0]
         chapter = api_get(token, f"/chapters/{surah_num}", {"language": "en"})["chapter"]
     except (KeyError, IndexError) as e:

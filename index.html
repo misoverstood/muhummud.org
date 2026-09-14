@@ -181,7 +181,7 @@
 
   // Verse of the day, written by the GitHub Action.
   try {
-    const v = await (await fetch(`data/verse.json?d=${torontoDMY(now())}`)).json();
+    const v = await (await fetch("data/verse.json", { cache: "no-store" })).json();
     set("ref", `${v.surah.name_simple} ${v.verse_key}`);
     $("surah").textContent = `${v.surah.translated_name} (${v.surah.name_arabic})`;
     $("ar").textContent = v.arabic;

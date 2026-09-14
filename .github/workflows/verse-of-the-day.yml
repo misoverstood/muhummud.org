@@ -2,7 +2,14 @@ name: Verse of the day
 
 on:
   schedule:
-    - cron: "5 4 * * *"   # 04:05 UTC = 00:05 Toronto (EDT), 23:05 prev day in EST; adjust if you care
+    # GitHub cron can lag by hours at busy times, so fire several times overnight.
+    # The script exits early once today's verse exists, so extra runs are no-ops.
+    # Times are UTC; Toronto is UTC-4 (EDT) or UTC-5 (EST).
+    - cron: "23 4 * * *"   # 00:23 EDT / 23:23 EST
+    - cron: "23 5 * * *"   # 01:23 EDT / 00:23 EST
+    - cron: "23 6 * * *"   # 02:23 EDT / 01:23 EST
+    - cron: "23 7 * * *"   # 03:23 EDT / 02:23 EST
+    - cron: "23 9 * * *"   # 05:23 EDT / 04:23 EST
   workflow_dispatch:
 
 permissions:

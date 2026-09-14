@@ -1,7 +1,7 @@
 """
 Verse of the day fetcher for GitHub Actions.
 Walks the Quran in order, one verse per day (1:1, 1:2, ... 114:6, then wraps),
-pulls IndoPak Arabic + English (The Clear Quran) from the Quran Foundation Content API,
+pulls IndoPak Arabic + English (Mufti Taqi Usmani) from the Quran Foundation Content API,
 and writes data/verse.json for the static site.
 The previous verse.json is the state: if it is already today's, nothing changes.
 """
@@ -19,8 +19,8 @@ ENV = os.getenv("QF_ENV", "prelive")
 CLIENT_ID = os.environ["QF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["QF_CLIENT_SECRET"]
 TRANSLATION_ID = os.getenv("QF_TRANSLATION_ID")  # optional numeric override
-TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH", "clear quran")  # preferred, case-insensitive name/author match
-TRANSLATION_FALLBACK = os.getenv("QF_TRANSLATION_FALLBACK", "saheeh")   # used until the preferred one is licensed
+TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH", "usmani")  # preferred, case-insensitive name/author match (Mufti Taqi Usmani)
+TRANSLATION_FALLBACK = os.getenv("QF_TRANSLATION_FALLBACK", "saheeh")   # used if the preferred one is unavailable
 OUT = Path(os.getenv("OUT_PATH", "data/verse.json"))
 
 URLS = {
@@ -138,7 +138,7 @@ def main() -> int:
                 print(name, "=", json.dumps(locals()[name], ensure_ascii=False)[:1500])
         raise
 
-    source = (tr_resp.get("meta") or {}).get("translation_name") or tr.get("resource_name") or "The Clear Quran"
+    source = (tr_resp.get("meta") or {}).get("translation_name") or tr.get("resource_name") or "Mufti Taqi Usmani"
     verse_number = int(key.split(":")[1])
 
     payload = {

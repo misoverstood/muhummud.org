@@ -1,4 +1,18 @@
 {
-  "date": "2026-09-13",
-  "verse_key": "1:1"
+  "date": "2026-09-14",
+  "verse_key": "1:2",
+  "surah": {
+    "number": 1,
+    "name_arabic": "الفاتحة",
+    "name_simple": "Al-Fatihah",
+    "translated_name": "The Opener"
+  },
+  "ayah": 2,
+  "position": 2,
+  "total": 6236,
+  "arabic": "اَلۡحَمۡدُ لِلّٰهِ رَبِّ الۡعٰلَمِيۡنَۙ‏",
+  "script": "indopak",
+  "translation": "Praise belongs to Allah, the Lord of all the worlds.",
+  "translation_source": "T. Usmani",
+  "generated_at": "2026-09-14T13:28:54+00:00"
 }

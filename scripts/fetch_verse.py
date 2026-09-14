@@ -19,7 +19,8 @@ ENV = os.getenv("QF_ENV", "prelive")
 CLIENT_ID = os.environ["QF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["QF_CLIENT_SECRET"]
 TRANSLATION_ID = os.getenv("QF_TRANSLATION_ID")  # optional numeric override
-TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH", "clear quran")  # case-insensitive name/author match
+TRANSLATION_MATCH = os.getenv("QF_TRANSLATION_MATCH", "clear quran")  # preferred, case-insensitive name/author match
+TRANSLATION_FALLBACK = os.getenv("QF_TRANSLATION_FALLBACK", "saheeh")   # used until the preferred one is licensed
 OUT = Path(os.getenv("OUT_PATH", "data/verse.json"))
 
 URLS = {
@@ -90,11 +91,18 @@ def resolve_translation_id(token: str) -> int:
         return int(TRANSLATION_ID)
     items = api_get(token, "/resources/translations", {"language": "en"})["translations"]
     english = [t for t in items if (t.get("language_name") or "").lower() == "english"]
-    for t in english:
-        hay = f"{t.get('name','')} {t.get('author_name','')}".lower()
-        if TRANSLATION_MATCH in hay:
-            return int(t["id"])
-    print(f"No English translation matched '{TRANSLATION_MATCH}'. Available:")
+    def find(needle: str) -> int | None:
+        for t in english:
+            if needle in f"{t.get('name','')} {t.get('author_name','')}".lower():
+                return int(t["id"])
+        return None
+
+    if (tid := find(TRANSLATION_MATCH)) is not None:
+        return tid
+    if (tid := find(TRANSLATION_FALLBACK)) is not None:
+        print(f"'{TRANSLATION_MATCH}' not available to this app; falling back to '{TRANSLATION_FALLBACK}' (id {tid})")
+        return tid
+    print(f"Neither '{TRANSLATION_MATCH}' nor '{TRANSLATION_FALLBACK}' matched. Available:")
     for t in english:
         print(f"  {t['id']:>5}  {t.get('name')}  ({t.get('author_name')})")
     raise SystemExit(1)

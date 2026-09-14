@@ -1,7 +1,7 @@
 """
 Verse of the day fetcher for GitHub Actions.
 Walks the Quran in order, one verse per day (1:1, 1:2, ... 114:6, then wraps),
-pulls Arabic + English from the Quran Foundation Content API,
+pulls IndoPak Arabic + English (The Clear Quran) from the Quran Foundation Content API,
 and writes data/verse.json for the static site.
 The previous verse.json is the state: if it is already today's, nothing changes.
 """
@@ -18,7 +18,7 @@ import requests
 ENV = os.getenv("QF_ENV", "prelive")
 CLIENT_ID = os.environ["QF_CLIENT_ID"]
 CLIENT_SECRET = os.environ["QF_CLIENT_SECRET"]
-TRANSLATION_ID = int(os.getenv("QF_TRANSLATION_ID", "20"))  # 20 = Sahih International
+TRANSLATION_ID = int(os.getenv("QF_TRANSLATION_ID", "131"))  # 131 = Dr. Mustafa Khattab, The Clear Quran
 OUT = Path(os.getenv("OUT_PATH", "data/verse.json"))
 
 URLS = {
@@ -102,7 +102,7 @@ def main() -> int:
     verse = api_get(
         token,
         f"/verses/by_key/{key}",
-        {"translations": TRANSLATION_ID, "fields": "text_uthmani", "translation_fields": "resource_name"},
+        {"translations": TRANSLATION_ID, "fields": "text_indopak,text_uthmani", "translation_fields": "resource_name"},
     )["verse"]
     chapter = api_get(token, f"/chapters/{surah_num}", {"language": "en"})["chapter"]
 
@@ -119,9 +119,10 @@ def main() -> int:
         "ayah": verse["verse_number"],
         "position": key_to_index(key) + 1,
         "total": TOTAL,
-        "arabic": verse["text_uthmani"],
+        "arabic": verse.get("text_indopak") or verse["text_uthmani"],
+        "script": "indopak" if verse.get("text_indopak") else "uthmani",
         "translation": clean(tr["text"]),
-        "translation_source": tr.get("resource_name", "Sahih International"),
+        "translation_source": tr.get("resource_name", "The Clear Quran"),
         "generated_at": datetime.now(ZoneInfo("UTC")).isoformat(timespec="seconds"),
     }
 

@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-16",
-  "verse_key": "1:4",
+  "date": "2026-09-17",
+  "verse_key": "1:5",
   "surah": {
     "number": 1,
     "name_arabic": "الفاتحة",
     "name_simple": "Al-Fatihah",
     "translated_name": "The Opener"
   },
-  "ayah": 4,
-  "position": 4,
+  "ayah": 5,
+  "position": 5,
   "total": 6236,
-  "arabic": "مٰلِكِ يَوۡمِ الدِّيۡنِؕ‏",
+  "arabic": "اِيَّاكَ نَعۡبُدُ وَاِيَّاكَ نَسۡتَعِيۡنُؕ‏",
   "script": "indopak",
-  "translation": "the Master of the Day of Requital.",
+  "translation": "You alone do we worship, and from You alone do we seek help.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-16T09:20:54+00:00"
+  "generated_at": "2026-09-17T09:30:21+00:00"
 }

@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-17",
-  "verse_key": "1:5",
+  "date": "2026-09-18",
+  "verse_key": "1:6",
   "surah": {
     "number": 1,
     "name_arabic": "الفاتحة",
     "name_simple": "Al-Fatihah",
     "translated_name": "The Opener"
   },
-  "ayah": 5,
-  "position": 5,
+  "ayah": 6,
+  "position": 6,
   "total": 6236,
-  "arabic": "اِيَّاكَ نَعۡبُدُ وَاِيَّاكَ نَسۡتَعِيۡنُؕ‏",
+  "arabic": "اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ‏",
   "script": "indopak",
-  "translation": "You alone do we worship, and from You alone do we seek help.",
+  "translation": "Take us on the straight path.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-17T09:30:21+00:00"
+  "generated_at": "2026-09-18T09:03:03+00:00"
 }

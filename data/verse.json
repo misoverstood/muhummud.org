@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-18",
-  "verse_key": "1:6",
+  "date": "2026-09-19",
+  "verse_key": "1:7",
   "surah": {
     "number": 1,
     "name_arabic": "الفاتحة",
     "name_simple": "Al-Fatihah",
     "translated_name": "The Opener"
   },
-  "ayah": 6,
-  "position": 6,
+  "ayah": 7,
+  "position": 7,
   "total": 6236,
-  "arabic": "اِهۡدِنَا الصِّرَاطَ الۡمُسۡتَقِيۡمَۙ‏",
+  "arabic": "صِرَاطَ الَّذِيۡنَ اَنۡعَمۡتَ عَلَيۡهِمۡ ۙ‏ غَيۡرِ الۡمَغۡضُوۡبِ عَلَيۡهِمۡ وَلَا الضَّآلِّيۡنَ‏",
   "script": "indopak",
-  "translation": "Take us on the straight path.",
+  "translation": "the path of those on whom You have bestowed Your Grace, not of those who have incurred Your wrath, nor of those who have gone astray.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-18T09:03:03+00:00"
+  "generated_at": "2026-09-19T08:51:20+00:00"
 }

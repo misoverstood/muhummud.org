@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-19",
-  "verse_key": "1:7",
+  "date": "2026-09-20",
+  "verse_key": "2:1",
   "surah": {
-    "number": 1,
-    "name_arabic": "الفاتحة",
-    "name_simple": "Al-Fatihah",
-    "translated_name": "The Opener"
+    "number": 2,
+    "name_arabic": "البقرة",
+    "name_simple": "Al-Baqarah",
+    "translated_name": "The Cow"
   },
-  "ayah": 7,
-  "position": 7,
+  "ayah": 1,
+  "position": 8,
   "total": 6236,
-  "arabic": "صِرَاطَ الَّذِيۡنَ اَنۡعَمۡتَ عَلَيۡهِمۡ ۙ‏ غَيۡرِ الۡمَغۡضُوۡبِ عَلَيۡهِمۡ وَلَا الضَّآلِّيۡنَ‏",
+  "arabic": "الٓمّٓۚ‏",
   "script": "indopak",
-  "translation": "the path of those on whom You have bestowed Your Grace, not of those who have incurred Your wrath, nor of those who have gone astray.",
+  "translation": "Alif. Lām. Mīm.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-19T08:51:20+00:00"
+  "generated_at": "2026-09-20T09:19:57+00:00"
 }

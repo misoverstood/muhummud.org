@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-20",
-  "verse_key": "2:1",
+  "date": "2026-09-21",
+  "verse_key": "2:2",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 1,
-  "position": 8,
+  "ayah": 2,
+  "position": 9,
   "total": 6236,
-  "arabic": "الٓمّٓۚ‏",
+  "arabic": "ذٰلِكَ الۡڪِتٰبُ لَا رَيۡبَۛۚۖ فِيۡهِۛۚ هُدًى لِّلۡمُتَّقِيۡنَۙ‏",
   "script": "indopak",
-  "translation": "Alif. Lām. Mīm.",
+  "translation": "This Book has no doubt in it - a guidance for the God-fearing,",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-20T09:19:57+00:00"
+  "generated_at": "2026-09-21T10:00:58+00:00"
 }

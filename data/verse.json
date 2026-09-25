@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-24",
-  "verse_key": "2:5",
+  "date": "2026-09-25",
+  "verse_key": "2:6",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 5,
-  "position": 12,
+  "ayah": 6,
+  "position": 13,
   "total": 6236,
-  "arabic": "اُولٰٓٮِٕكَ عَلٰى هُدًى مِّنۡ رَّبِّهِمۡ​ وَاُولٰٓٮِٕكَ هُمُ الۡمُفۡلِحُوۡنَ‏ ﻿﻿",
+  "arabic": "اِنَّ الَّذِيۡنَ كَفَرُوۡا سَوَآءٌ عَلَيۡهِمۡ ءَاَنۡذَرۡتَهُمۡ اَمۡ لَمۡ تُنۡذِرۡهُمۡ لَا يُؤۡمِنُوۡنَ‏",
   "script": "indopak",
-  "translation": "It is these who are guided by their Lord; and it is just these who are successful.",
+  "translation": "Surely for those who have disbelieved, it is all the same whether you warn them or you warn them not: they do not believe.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-24T09:21:56+00:00"
+  "generated_at": "2026-09-25T09:39:34+00:00"
 }

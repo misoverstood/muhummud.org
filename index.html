@@ -27,13 +27,13 @@
     --sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --arabic: "Noto Naskh Arabic", "Scheherazade New", "Amiri", serif;
     --bg: #fdfdfb;
-    --muted: #8e8e88;   /* prose */
+    --muted: #75756f;   /* prose, 4.55:1 on --bg, WCAG AA */
     --ink: #1a1a18;     /* live data */
     --rule: #d9d9d2;    /* dotted underline */
     --size: clamp(1.35rem, 1.1rem + 1.2vw, 1.8rem);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #131311; --muted: #80807a; --ink: #efefe9; --rule: #3a3a35; }
+    :root { --bg: #131311; --muted: #80807a; /* 4.68:1 */ --ink: #efefe9; --rule: #3a3a35; }
   }
   * { box-sizing: border-box; }
   html { background: var(--bg); }

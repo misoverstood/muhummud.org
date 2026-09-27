@@ -1,0 +1,6 @@
+# GitHub Pages builds this repo with Jekyll. Publish the site only, not the repo's docs or tooling.
+exclude:
+  - DESIGN.md
+  - README.md
+  - scripts
+  - index_original_20251115.html

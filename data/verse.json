@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-27",
-  "verse_key": "2:8",
+  "date": "2026-09-28",
+  "verse_key": "2:9",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 8,
-  "position": 15,
+  "ayah": 9,
+  "position": 16,
   "total": 6236,
-  "arabic": "وَمِنَ النَّاسِ مَنۡ يَّقُوۡلُ اٰمَنَّا بِاللّٰهِ وَبِالۡيَوۡمِ الۡاٰخِرِ وَمَا هُمۡ بِمُؤۡمِنِيۡنَ​ۘ‏",
+  "arabic": "يُخٰدِعُوۡنَ اللّٰهَ وَالَّذِيۡنَ اٰمَنُوۡا ​ۚ وَمَا يَخۡدَعُوۡنَ اِلَّاۤ اَنۡفُسَهُمۡ وَمَا يَشۡعُرُوۡنَؕ‏",
   "script": "indopak",
-  "translation": "And among men there are some who say, “We believe in Allah and in the Last Day”, yet they are not believers.",
+  "translation": "They try to deceive Allah and those who believe, while they are not deceiving anyone except themselves, although they are unaware of it.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-27T10:03:34+00:00"
+  "generated_at": "2026-09-28T11:00:28+00:00"
 }

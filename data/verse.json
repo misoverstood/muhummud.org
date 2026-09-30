@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-29",
-  "verse_key": "2:10",
+  "date": "2026-09-30",
+  "verse_key": "2:11",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 10,
-  "position": 17,
+  "ayah": 11,
+  "position": 18,
   "total": 6236,
-  "arabic": "فِىۡ قُلُوۡبِهِمۡ مَّرَضٌۙ فَزَادَهُمُ اللّٰهُ مَرَضًا ​ۚ وَّلَهُمۡ عَذَابٌ اَلِيۡمٌۙۢبِمَا كَانُوۡا يَكۡذِبُوۡنَ‏",
+  "arabic": "وَاِذَا قِيۡلَ لَهُمۡ لَا تُفۡسِدُوۡا فِىۡ الۡاَرۡضِۙ قَالُوۡاۤ اِنَّمَا نَحۡنُ مُصۡلِحُوۡنَ‏",
   "script": "indopak",
-  "translation": "In their hearts there is a malady, so Allah has made them grow in their malady; and for them there is a grievous punishment, because they have been lying.",
+  "translation": "When it is said to them, “Do not spread disorder on the earth”, they say, “We are but reformers.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-29T10:45:13+00:00"
+  "generated_at": "2026-09-30T10:32:54+00:00"
 }

@@ -1,18 +1,18 @@
 {
-  "date": "2026-09-30",
-  "verse_key": "2:11",
+  "date": "2026-10-01",
+  "verse_key": "2:12",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 11,
-  "position": 18,
+  "ayah": 12,
+  "position": 19,
   "total": 6236,
-  "arabic": "وَاِذَا قِيۡلَ لَهُمۡ لَا تُفۡسِدُوۡا فِىۡ الۡاَرۡضِۙ قَالُوۡاۤ اِنَّمَا نَحۡنُ مُصۡلِحُوۡنَ‏",
+  "arabic": "اَلَا ۤ اِنَّهُمۡ هُمُ الۡمُفۡسِدُوۡنَ وَلٰـكِنۡ لَّا يَشۡعُرُوۡنَ‏",
   "script": "indopak",
-  "translation": "When it is said to them, “Do not spread disorder on the earth”, they say, “We are but reformers.”",
+  "translation": "Beware, it is, in fact, they who spread disorder, but they do not appreciate.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-09-30T10:32:54+00:00"
+  "generated_at": "2026-10-01T11:00:52+00:00"
 }

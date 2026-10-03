@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-02",
-  "verse_key": "2:13",
+  "date": "2026-10-03",
+  "verse_key": "2:14",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 13,
-  "position": 20,
+  "ayah": 14,
+  "position": 21,
   "total": 6236,
-  "arabic": "وَاِذَا قِيۡلَ لَهُمۡ اٰمِنُوۡا كَمَاۤ اٰمَنَ النَّاسُ قَالُوۡاۤ اَنُؤۡمِنُ كَمَاۤ اٰمَنَ السُّفَهَآءُ​ ؕ اَلَاۤ اِنَّهُمۡ هُمُ السُّفَهَآءُ وَلٰـكِنۡ لَّا يَعۡلَمُوۡنَ‏",
+  "arabic": "وَاِذَا لَقُوۡا الَّذِيۡنَ اٰمَنُوۡا قَالُوۡاۤ اٰمَنَّا ۖۚ وَاِذَا خَلَوۡا اِلٰى شَيٰطِيۡنِهِمۡۙ قَالُوۡاۤ اِنَّا مَعَكُمۡۙ اِنَّمَا نَحۡنُ مُسۡتَهۡزِءُوۡنَ‏ ﻿﻿",
   "script": "indopak",
-  "translation": "And when it is said to them, “Believe as people have believed,” they say, “Shall we believe as the fools have believed?” Beware, it is, in fact, they who are the fools, but they do not know.",
+  "translation": "When they meet those who believe, they say, “We have entered Faith;” but when they are alone with their satans, they say, “Indeed, we are with you; we were only mocking.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-02T10:33:52+00:00"
+  "generated_at": "2026-10-03T09:54:40+00:00"
 }

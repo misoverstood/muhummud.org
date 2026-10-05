@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-04",
-  "verse_key": "2:15",
+  "date": "2026-10-05",
+  "verse_key": "2:16",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 15,
-  "position": 22,
+  "ayah": 16,
+  "position": 23,
   "total": 6236,
-  "arabic": "اَللّٰهُ يَسۡتَهۡزِئُ بِهِمۡ وَيَمُدُّهُمۡ فِىۡ طُغۡيَانِهِمۡ يَعۡمَهُوۡنَ‏ ﻿﻿",
+  "arabic": "اُولٰٓٮِٕكَ الَّذِيۡنَ اشۡتَرَوُا الضَّلٰلَةَ بِالۡهُدٰى فَمَا رَبِحَتۡ تِّجَارَتُهُمۡ وَمَا كَانُوۡا مُهۡتَدِيۡنَ‏",
   "script": "indopak",
-  "translation": "It is Allah who mocks at them, and lets them go on wandering blindly in their rebellion.",
+  "translation": "These are the people who have bought error at the price of guidance; so their trade has brought no gain, nor have they reached the right Path.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-04T10:37:24+00:00"
+  "generated_at": "2026-10-05T11:36:02+00:00"
 }

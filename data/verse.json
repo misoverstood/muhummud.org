@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-05",
-  "verse_key": "2:16",
+  "date": "2026-10-06",
+  "verse_key": "2:17",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 16,
-  "position": 23,
+  "ayah": 17,
+  "position": 24,
   "total": 6236,
-  "arabic": "اُولٰٓٮِٕكَ الَّذِيۡنَ اشۡتَرَوُا الضَّلٰلَةَ بِالۡهُدٰى فَمَا رَبِحَتۡ تِّجَارَتُهُمۡ وَمَا كَانُوۡا مُهۡتَدِيۡنَ‏",
+  "arabic": "مَثَلُهُمۡ كَمَثَلِ الَّذِى اسۡتَوۡقَدَ نَارًا ​ۚ فَلَمَّاۤ اَضَآءَتۡ مَا حَوۡلَهٗ ذَهَبَ اللّٰهُ بِنُوۡرِهِمۡ وَتَرَكَهُمۡ فِىۡ ظُلُمٰتٍ لَّا يُبۡصِرُوۡنَ‏ ﻿﻿",
   "script": "indopak",
-  "translation": "These are the people who have bought error at the price of guidance; so their trade has brought no gain, nor have they reached the right Path.",
+  "translation": "Their situation is like that of a man who kindles a fire, and when it illuminates everything around him, Allah takes away their lights and leaves them in layers of darkness, so that they see nothing.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-05T11:36:02+00:00"
+  "generated_at": "2026-10-06T11:20:28+00:00"
 }

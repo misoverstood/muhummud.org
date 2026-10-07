@@ -83,8 +83,8 @@
     margin: auto auto 0;
     padding: 0 clamp(1.25rem, 5vw, 2.5rem) 1.5rem;
   }
-  footer p { font-size: .55em; line-height: 1.6; margin: 0; }
-  footer p + p { margin-top: .9em; }
+  footer p, footer .ring { font-size: .55em; line-height: 1.6; margin: 0; }
+  footer p + p, footer p + .ring { margin-top: .9em; }
   footer a { text-decoration: underline dotted var(--rule); text-underline-offset: .2em; }
   .ring a { white-space: nowrap; }
   .ring a[aria-current] { color: var(--ink); }
@@ -116,11 +116,7 @@
   <p>Quran data provided by <a href="https://quran.foundation">Quran Foundation</a>.
   Prayer times from <a href="https://aladhan.com">Aladhan</a>.
   Weather from <a href="https://open-meteo.com">Open-Meteo</a>.</p>
-  <p class="ring"><a href="https://muhummud.org/" aria-current="page">muhummud.org</a> ·
-  <a href="https://thatstheworst.com/">thatstheworst.com</a> ·
-  <a href="https://flemingdon.org/">flemingdon.org</a> ·
-  <a href="https://naseema.net/">naseema.net</a> ·
-  <a href="https://iseentit.com/">iseentit.com</a></p>
+  <nav class="ring links-ring" data-links-ring aria-label="My other sites"></nav>
 </footer>
 
 <script>
@@ -206,5 +202,6 @@
   }
 })();
 </script>
+<script src="https://misoverstood.github.io/links-ring/ring.js" defer></script>
 </body>
 </html>

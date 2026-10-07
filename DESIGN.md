@@ -71,16 +71,17 @@ Rules:
 Two lines, in this order: data credits, then the site ring.
 
 1. **Credits.** Exactly: "Quran data provided by Quran Foundation. Prayer times from Aladhan. Weather from Open-Meteo." The Quran Foundation wording is a licence condition; do not paraphrase it.
-2. **Site ring.** A fixed order across every site in the family, not current-site-first:
+2. **Site ring.** Rendered by the shared script from the `misoverstood/links-ring` repo, loaded as `https://misoverstood.github.io/links-ring/ring.js`. This page only provides an empty `<nav class="ring links-ring" data-links-ring>` for it to fill. The list, its order and its format (inline list or prev / random / next) live in that one file and change for every site at once. The current order, fixed across every site and not current-site-first:
 
-   muhummud.org · thatstheworst.com · flemingdon.org · naseema.net · iseentit.com
+   muhummud.org · thatstheworst.com · flemingdon.org · naseema.net · iseentit.com · kholvad.org
 
-   The current site carries `aria-current="page"` and renders in `--ink`; the others stay `--muted`. Each link is `white-space: nowrap`.
+   The script marks the current site with `aria-current="page"`; this page's CSS renders it in `--ink` and the others in `--muted`, each link `white-space: nowrap`, at the same 0.55em as the credits line. With JavaScript off, the ring line is simply absent; that is accepted.
 
 ## Don't
 
 - Add browser storage, cookies, analytics or any tracking.
 - Add a build step, framework or bundler. It is one HTML file on purpose.
+- Add external scripts. The links-ring script is the one exception, because it keeps the ring identical across every site.
 - Add a second typeface or an accent colour.
-- Put account names, secret locations or infrastructure detail in this repo. It is public.
-- Change the ring order on one site without changing it on all five.
+- Put account names, secret locations or infrastructure detail in this repo. It is public. (The `misoverstood` GitHub name in the ring URL is already public as this repo's owner.)
+- Hardcode the site ring in this page, or change its order or format here. Edit `ring.js` in `misoverstood/links-ring` instead.

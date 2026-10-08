@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-07",
-  "verse_key": "2:18",
+  "date": "2026-10-08",
+  "verse_key": "2:19",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 18,
-  "position": 25,
+  "ayah": 19,
+  "position": 26,
   "total": 6236,
-  "arabic": "صُمٌّۢ بُكۡمٌ عُمۡىٌ فَهُمۡ لَا يَرۡجِعُوۡنَ ۙ‏",
+  "arabic": "اَوۡ كَصَيِّبٍ مِّنَ السَّمَآءِ فِيۡهِ ظُلُمٰتٌ وَّرَعۡدٌ وَّبَرۡقٌ​ ۚ يَجۡعَلُوۡنَ اَصَابِعَهُمۡ فِىۡۤ اٰذَانِهِمۡ مِّنَ الصَّوَاعِقِ حَذَرَ الۡمَوۡتِ​ؕ وَاللّٰهُ مُحِيۡطٌ​ۢ بِالۡكٰفِرِيۡنَ‏",
   "script": "indopak",
-  "translation": "Deaf, dumb and blind, they shall not return.",
+  "translation": "Or (it is) like a rainstorm from the sky, bringing darkness, thunder and lightning; they thrust their fingers in their ears against the thunderclaps for fear of death, -and Allah encompasses the disbelievers.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-07T11:08:16+00:00"
+  "generated_at": "2026-10-08T11:26:10+00:00"
 }

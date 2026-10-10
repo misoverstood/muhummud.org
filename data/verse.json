@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-09",
-  "verse_key": "2:20",
+  "date": "2026-10-10",
+  "verse_key": "2:21",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 20,
-  "position": 27,
+  "ayah": 21,
+  "position": 28,
   "total": 6236,
-  "arabic": "يَكَادُ الۡبَرۡقُ يَخۡطَفُ اَبۡصَارَهُمۡ​ؕ كُلَّمَاۤ اَضَآءَ لَهُمۡ مَّشَوۡا فِيۡهِۙ وَاِذَاۤ اَظۡلَمَ عَلَيۡهِمۡ قَامُوۡا​ؕ وَلَوۡ شَآءَ اللّٰهُ لَذَهَبَ بِسَمۡعِهِمۡ وَاَبۡصَارِهِمۡ​ؕ اِنَّ اللّٰهَ عَلٰى كُلِّ شَىۡءٍ قَدِيۡرٌ‏",
+  "arabic": "يٰۤاَيُّهَا النَّاسُ اعۡبُدُوۡا رَبَّكُمُ الَّذِىۡ خَلَقَكُمۡ وَالَّذِيۡنَ مِنۡ قَبۡلِكُمۡ لَعَلَّكُمۡ تَتَّقُوۡنَ ۙ‏",
   "script": "indopak",
-  "translation": "and lightning (all but) snatches away their eyesight; every time a flash gives them light, they walk by it; and when darkness falls upon them, they stand still. And if Allah willed, He would certainly take away their hearing and their eyes: surely Allah is powerful to do anything.",
+  "translation": "O people, worship your Lord who created you and those before you, so that you may become God-fearing.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-09T11:22:50+00:00"
+  "generated_at": "2026-10-10T10:40:08+00:00"
 }

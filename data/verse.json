@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-10",
-  "verse_key": "2:21",
+  "date": "2026-10-11",
+  "verse_key": "2:22",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 21,
-  "position": 28,
+  "ayah": 22,
+  "position": 29,
   "total": 6236,
-  "arabic": "يٰۤاَيُّهَا النَّاسُ اعۡبُدُوۡا رَبَّكُمُ الَّذِىۡ خَلَقَكُمۡ وَالَّذِيۡنَ مِنۡ قَبۡلِكُمۡ لَعَلَّكُمۡ تَتَّقُوۡنَ ۙ‏",
+  "arabic": "الَّذِىۡ جَعَلَ لَـكُمُ الۡاَرۡضَ فِرَاشًا وَّالسَّمَآءَ بِنَآءً وَّاَنۡزَلَ مِنَ السَّمَآءِ مَآءً فَاَخۡرَجَ بِهٖ مِنَ الثَّمَرٰتِ رِزۡقًا لَّـكُمۡ​ۚ فَلَا تَجۡعَلُوۡا لِلّٰهِ اَنۡدَادًا وَّاَنۡـتُمۡ تَعۡلَمُوۡنَ ‏",
   "script": "indopak",
-  "translation": "O people, worship your Lord who created you and those before you, so that you may become God-fearing.",
+  "translation": "He is the One who made the earth a bed for you, and the sky a roof, and sent down water from the sky, then brought forth with it fruits, as a provision for you. So, do not set up parallels to Allah when you know.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-10T10:40:08+00:00"
+  "generated_at": "2026-10-11T10:52:45+00:00"
 }

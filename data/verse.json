@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-12",
-  "verse_key": "2:23",
+  "date": "2026-10-13",
+  "verse_key": "2:24",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 23,
-  "position": 30,
+  "ayah": 24,
+  "position": 31,
   "total": 6236,
-  "arabic": "وَاِنۡ کُنۡتُمۡ فِىۡ رَيۡبٍ مِّمَّا نَزَّلۡنَا عَلٰى عَبۡدِنَا فَاۡتُوۡا بِسُوۡرَةٍ مِّنۡ مِّثۡلِهٖ وَادۡعُوۡا شُهَدَآءَكُمۡ مِّنۡ دُوۡنِ اللّٰهِ اِنۡ كُنۡتُمۡ صٰدِقِيۡنَ‏ ﻿﻿",
+  "arabic": "فَاِنۡ لَّمۡ تَفۡعَلُوۡا وَلَنۡ تَفۡعَلُوۡا فَاتَّقُوۡا النَّارَ الَّتِىۡ وَقُوۡدُهَا النَّاسُ وَالۡحِجَارَةُ  ۖۚ اُعِدَّتۡ لِلۡكٰفِرِيۡنَ‏",
   "script": "indopak",
-  "translation": "If you are in doubt about what We have revealed to Our servant, then bring a Sūrah similar to this, and do call your supporters other than Allah, if you are true.",
+  "translation": "But if you do not - and you will never be able to - then guard yourselves against the Fire, the fuel of which will be men and stones. It has been prepared for disbelievers.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-12T12:07:52+00:00"
+  "generated_at": "2026-10-13T11:53:35+00:00"
 }

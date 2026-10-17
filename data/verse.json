@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-16",
-  "verse_key": "2:27",
+  "date": "2026-10-17",
+  "verse_key": "2:28",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 27,
-  "position": 34,
+  "ayah": 28,
+  "position": 35,
   "total": 6236,
-  "arabic": "الَّذِيۡنَ يَنۡقُضُوۡنَ عَهۡدَ اللّٰهِ مِنۡۢ بَعۡدِ مِيۡثَاقِهٖ وَيَقۡطَعُوۡنَ مَآ اَمَرَ اللّٰهُ بِهٖۤ اَنۡ يُّوۡصَلَ وَيُفۡسِدُوۡنَ فِى الۡاَرۡضِ​ؕ اُولٰٓٮِٕكَ هُمُ الۡخٰسِرُوۡنَ‏",
+  "arabic": "كَيۡفَ تَكۡفُرُوۡنَ بِاللّٰهِ وَڪُنۡتُمۡ اَمۡوَاتًا فَاَحۡيَاکُمۡ​ۚ ثُمَّ يُمِيۡتُكُمۡ ثُمَّ يُحۡيِيۡكُمۡ ثُمَّ اِلَيۡهِ تُرۡجَعُوۡنَ‏",
   "script": "indopak",
-  "translation": "- those who break the Covenant of Allah after it has been made binding, and cut off the relations Allah has commanded to be joined, and spread disorder on the earth - it is these who are the losers.",
+  "translation": "“How is it that you deny Allah, while you were lifeless and He gave you life; then He will make you die, and then He will make you live again, and then to Him you will be returned?",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-16T09:05:12+00:00"
+  "generated_at": "2026-10-17T08:37:52+00:00"
 }

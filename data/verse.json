@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-19",
-  "verse_key": "2:30",
+  "date": "2026-10-20",
+  "verse_key": "2:31",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 30,
-  "position": 37,
+  "ayah": 31,
+  "position": 38,
   "total": 6236,
-  "arabic": "وَاِذۡ قَالَ رَبُّكَ لِلۡمَلٰٓٮِٕكَةِ اِنِّىۡ جَاعِلٌ فِى الۡاَرۡضِ خَلِيۡفَةً ؕ قَالُوۡٓا اَتَجۡعَلُ فِيۡهَا مَنۡ يُّفۡسِدُ فِيۡهَا وَيَسۡفِكُ الدِّمَآءَۚ وَنَحۡنُ نُسَبِّحُ بِحَمۡدِكَ وَنُقَدِّسُ لَـكَ​ؕ قَالَ اِنِّىۡٓ اَعۡلَمُ مَا لَا تَعۡلَمُوۡنَ‏ ﻿﻿",
+  "arabic": "وَعَلَّمَ اٰدَمَ الۡاَسۡمَآءَ كُلَّهَا ثُمَّ عَرَضَهُمۡ عَلَى الۡمَلٰٓٮِٕكَةِ فَقَالَ اَنۡۢبِــُٔوۡنِىۡ بِاَسۡمَآءِ هٰٓؤُلَآءِ اِنۡ كُنۡتُمۡ صٰدِقِيۡنَ‏",
   "script": "indopak",
-  "translation": "(Remember) when your Lord said to the angels, “I am going to create a deputy on the earth!” They said, “Will You create there one who will spread disorder on the earth and cause bloodshed, while we proclaim Your purity, along with your praise, and sanctify Your name?” He said, “Certainly, I know what you know not.”",
+  "translation": "And He taught ’Ādam the names, all of them; then presented them before the angels, and said, “Tell me their names, if you are right.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-19T10:00:30+00:00"
+  "generated_at": "2026-10-20T09:29:10+00:00"
 }

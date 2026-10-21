@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-20",
-  "verse_key": "2:31",
+  "date": "2026-10-21",
+  "verse_key": "2:32",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 31,
-  "position": 38,
+  "ayah": 32,
+  "position": 39,
   "total": 6236,
-  "arabic": "وَعَلَّمَ اٰدَمَ الۡاَسۡمَآءَ كُلَّهَا ثُمَّ عَرَضَهُمۡ عَلَى الۡمَلٰٓٮِٕكَةِ فَقَالَ اَنۡۢبِــُٔوۡنِىۡ بِاَسۡمَآءِ هٰٓؤُلَآءِ اِنۡ كُنۡتُمۡ صٰدِقِيۡنَ‏",
+  "arabic": "قَالُوۡا سُبۡحٰنَكَ لَا عِلۡمَ لَنَآ اِلَّا مَا عَلَّمۡتَنَا ؕ اِنَّكَ اَنۡتَ الۡعَلِيۡمُ الۡحَكِيۡمُ‏",
   "script": "indopak",
-  "translation": "And He taught ’Ādam the names, all of them; then presented them before the angels, and said, “Tell me their names, if you are right.”",
+  "translation": "They said, “To You belongs all purity! We have no knowledge except what You have given us. Surely, You alone are the All-knowing, All-wise.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-20T09:29:10+00:00"
+  "generated_at": "2026-10-21T09:25:03+00:00"
 }

@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-21",
-  "verse_key": "2:32",
+  "date": "2026-10-22",
+  "verse_key": "2:33",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 32,
-  "position": 39,
+  "ayah": 33,
+  "position": 40,
   "total": 6236,
-  "arabic": "قَالُوۡا سُبۡحٰنَكَ لَا عِلۡمَ لَنَآ اِلَّا مَا عَلَّمۡتَنَا ؕ اِنَّكَ اَنۡتَ الۡعَلِيۡمُ الۡحَكِيۡمُ‏",
+  "arabic": "قَالَ يٰٓـاٰدَمُ اَنۡۢبِئۡهُمۡ بِاَسۡمَآٮِٕهِمۡ​ۚ فَلَمَّآ اَنۡۢبَاَهُمۡ بِاَسۡمَآٮِٕهِمۡۙ قَالَ اَلَمۡ اَقُل لَّـكُمۡ اِنِّىۡٓ اَعۡلَمُ غَيۡبَ السَّمٰوٰتِ وَالۡاَرۡضِۙ وَاَعۡلَمُ مَا تُبۡدُوۡنَ وَمَا كُنۡتُمۡ تَكۡتُمُوۡنَ‏",
   "script": "indopak",
-  "translation": "They said, “To You belongs all purity! We have no knowledge except what You have given us. Surely, You alone are the All-knowing, All-wise.”",
+  "translation": "He said, “O ’Ādam, tell them the names of all these.” When he told them their names, Allah said, “Did I not tell you that I know the secrets of the skies and of the earth, and that I know what you disclose and what you conceal.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-21T09:25:03+00:00"
+  "generated_at": "2026-10-22T09:28:00+00:00"
 }

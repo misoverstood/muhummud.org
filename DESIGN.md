@@ -77,11 +77,19 @@ Two lines, in this order: data credits, then the site ring.
 
    The script marks the current site with `aria-current="page"`; this page's CSS renders it in `--ink` and the others in `--muted`, each link `white-space: nowrap`, at the same 0.55em as the credits line. With JavaScript off, the ring line is simply absent; that is accepted.
 
+## Analytics
+
+Cloudflare Web Analytics, through its JavaScript beacon only, loaded as the last element before `</body>`. It is the same setup used across the personal sites. It was chosen because it sets no cookies, uses no browser storage, and reports aggregate visits, referrers, countries and page-load performance without identifying individual visitors, which keeps it inside the no-storage, no-tracking rules below.
+
+The token in the snippet is public by design: it tells Cloudflare which site the beacon belongs to and grants nothing.
+
+Never switch on Cloudflare's proxy (orange cloud) for this domain to get Cloudflare's automatic analytics instead. Proxying stops GitHub Pages from renewing the site's TLS certificate.
+
 ## Don't
 
-- Add browser storage, cookies, analytics or any tracking.
+- Add browser storage, cookies or per-visitor tracking, or any analytics beyond the Cloudflare beacon.
 - Add a build step, framework or bundler. It is one HTML file on purpose.
-- Add external scripts. The links-ring script is the one exception, because it keeps the ring identical across every site.
+- Add external scripts. There are two exceptions: the links-ring script, which keeps the ring identical across every site, and the Cloudflare Web Analytics beacon.
 - Add a second typeface or an accent colour.
 - Put account names, secret locations or infrastructure detail in this repo. It is public. (The `misoverstood` GitHub name in the ring URL is already public as this repo's owner.)
 - Hardcode the site ring in this page, or change its order or format here. Edit `ring.js` in `misoverstood/links-ring` instead.

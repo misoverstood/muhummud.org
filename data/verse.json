@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-22",
-  "verse_key": "2:33",
+  "date": "2026-10-23",
+  "verse_key": "2:34",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 33,
-  "position": 40,
+  "ayah": 34,
+  "position": 41,
   "total": 6236,
-  "arabic": "قَالَ يٰٓـاٰدَمُ اَنۡۢبِئۡهُمۡ بِاَسۡمَآٮِٕهِمۡ​ۚ فَلَمَّآ اَنۡۢبَاَهُمۡ بِاَسۡمَآٮِٕهِمۡۙ قَالَ اَلَمۡ اَقُل لَّـكُمۡ اِنِّىۡٓ اَعۡلَمُ غَيۡبَ السَّمٰوٰتِ وَالۡاَرۡضِۙ وَاَعۡلَمُ مَا تُبۡدُوۡنَ وَمَا كُنۡتُمۡ تَكۡتُمُوۡنَ‏",
+  "arabic": "وَاِذۡ قُلۡنَا لِلۡمَلٰٓٮِٕكَةِ اسۡجُدُوۡا لِاٰدَمَ فَسَجَدُوۡٓا اِلَّاۤ اِبۡلِيۡسَؕ اَبٰى وَاسۡتَكۡبَرَ  وَكَانَ مِنَ الۡكٰفِرِيۡنَ‏",
   "script": "indopak",
-  "translation": "He said, “O ’Ādam, tell them the names of all these.” When he told them their names, Allah said, “Did I not tell you that I know the secrets of the skies and of the earth, and that I know what you disclose and what you conceal.",
+  "translation": "And when We said to the angels: “Prostrate yourselves before ’Ādam!” So, they prostrated themselves, all but Iblīs (Satan). He refused, and became one of the infidels.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-22T09:28:00+00:00"
+  "generated_at": "2026-10-23T09:24:12+00:00"
 }

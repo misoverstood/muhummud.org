@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-23",
-  "verse_key": "2:34",
+  "date": "2026-10-24",
+  "verse_key": "2:35",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 34,
-  "position": 41,
+  "ayah": 35,
+  "position": 42,
   "total": 6236,
-  "arabic": "وَاِذۡ قُلۡنَا لِلۡمَلٰٓٮِٕكَةِ اسۡجُدُوۡا لِاٰدَمَ فَسَجَدُوۡٓا اِلَّاۤ اِبۡلِيۡسَؕ اَبٰى وَاسۡتَكۡبَرَ  وَكَانَ مِنَ الۡكٰفِرِيۡنَ‏",
+  "arabic": "وَقُلۡنَا يٰٓـاٰدَمُ اسۡكُنۡ اَنۡتَ وَزَوۡجُكَ الۡجَـنَّةَ وَكُلَا مِنۡهَا رَغَدًا حَيۡثُ شِئۡتُمَا وَلَا تَقۡرَبَا هٰذِهِ الشَّجَرَةَ فَتَكُوۡنَا مِنَ الظّٰلِمِيۡنَ‏ ﻿﻿",
   "script": "indopak",
-  "translation": "And when We said to the angels: “Prostrate yourselves before ’Ādam!” So, they prostrated themselves, all but Iblīs (Satan). He refused, and became one of the infidels.",
+  "translation": "And We said, “O ’Ādam, dwell, you and your wife, in Paradise; and eat at pleasure wherever you like, but do not go near this tree, otherwise you will be (counted) among the transgressors.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-23T09:24:12+00:00"
+  "generated_at": "2026-10-24T08:55:43+00:00"
 }

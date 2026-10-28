@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-27",
-  "verse_key": "2:38",
+  "date": "2026-10-28",
+  "verse_key": "2:39",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 38,
-  "position": 45,
+  "ayah": 39,
+  "position": 46,
   "total": 6236,
-  "arabic": "قُلۡنَا اهۡبِطُوۡا مِنۡهَا جَمِيۡعًا ​​ۚ فَاِمَّا يَاۡتِيَنَّكُمۡ مِّنِّىۡ هُدًى فَمَنۡ تَبِعَ هُدَاىَ فَلَا خَوۡفٌ عَلَيۡهِمۡ وَلَا هُمۡ يَحۡزَنُوۡنَ‏",
+  "arabic": "وَالَّذِيۡنَ كَفَرُوۡا وَكَذَّبُوۡا بِـاٰيٰتِنَآ اُولٰٓٮِٕكَ اَصۡحٰبُ النَّارِ​​ۚ هُمۡ فِيۡهَا خٰلِدُوۡنَ‏",
   "script": "indopak",
-  "translation": "We said, “Go down from here, all of you. Then, should some guidance come to you from Me, those who follow My guidance shall have no fear, nor shall they grieve.",
+  "translation": "As for those who disbelieve, and deny Our signs, they are the people of the Fire. They shall dwell in it forever.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-27T09:52:09+00:00"
+  "generated_at": "2026-10-28T10:38:58+00:00"
 }

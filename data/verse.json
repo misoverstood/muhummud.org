@@ -1,18 +1,18 @@
 {
-  "date": "2026-10-30",
-  "verse_key": "2:41",
+  "date": "2026-10-31",
+  "verse_key": "2:42",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 41,
-  "position": 48,
+  "ayah": 42,
+  "position": 49,
   "total": 6236,
-  "arabic": "وَاٰمِنُوۡا بِمَآ اَنۡزَلۡتُ مُصَدِّقًا لِّمَا مَعَكُمۡ وَلَا تَكُوۡنُوۡآ اَوَّلَ كَافِرٍۢ بِهٖ​ وَلَا تَشۡتَرُوۡا بِاٰيٰتِىۡ ثَمَنًا قَلِيۡلًا وَّاِيَّاىَ فَاتَّقُوۡنِ‏",
+  "arabic": "وَلَا تَلۡبِسُوا الۡحَـقَّ بِالۡبَاطِلِ وَتَكۡتُمُوا الۡحَـقَّ وَاَنۡتُمۡ تَعۡلَمُوۡنَ‏",
   "script": "indopak",
-  "translation": "And have faith in what I have revealed, confirming what is already with you, and do not be the first to deny it, nor take a paltry price for My verses. Fear Me alone.",
+  "translation": "and do not confound truth with falsehood, and do not hide the truth when you know (it).",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-10-30T10:54:29+00:00"
+  "generated_at": "2026-10-31T10:26:48+00:00"
 }

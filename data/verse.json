@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-01",
-  "verse_key": "2:43",
+  "date": "2026-11-02",
+  "verse_key": "2:44",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 43,
-  "position": 50,
+  "ayah": 44,
+  "position": 51,
   "total": 6236,
-  "arabic": "وَاَقِيۡمُوا الصَّلٰوةَ وَاٰتُوا الزَّكٰوةَ وَارۡكَعُوۡا مَعَ الرّٰكِعِيۡنَ‏ ﻿﻿",
+  "arabic": "اَتَاۡمُرُوۡنَ النَّاسَ بِالۡبِرِّ وَتَنۡسَوۡنَ اَنۡفُسَكُمۡ وَاَنۡتُمۡ تَتۡلُوۡنَ الۡكِتٰبَ​ؕ اَفَلَا تَعۡقِلُوۡنَ‏",
   "script": "indopak",
-  "translation": "And be steadfast in Salāh (prayer), and pay Zakāh, and bow down with those who bow down.",
+  "translation": "Do you enjoin righteousness upon others while you ignore your own selves, although you keep reciting the Book? Have you then no sense?",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-01T11:20:47+00:00"
+  "generated_at": "2026-11-02T12:34:34+00:00"
 }

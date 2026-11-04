@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-03",
-  "verse_key": "2:45",
+  "date": "2026-11-04",
+  "verse_key": "2:46",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 45,
-  "position": 52,
+  "ayah": 46,
+  "position": 53,
   "total": 6236,
-  "arabic": "وَاسۡتَعِيۡنُوۡا بِالصَّبۡرِ وَالصَّلٰوةِ ​ؕ وَاِنَّهَا لَكَبِيۡرَةٌ اِلَّا عَلَى الۡخٰشِعِيۡنَۙ‏",
+  "arabic": "الَّذِيۡنَ يَظُنُّوۡنَ اَنَّهُمۡ مُّلٰقُوۡا رَبِّهِمۡ وَاَنَّهُمۡ اِلَيۡهِ رٰجِعُوۡنَ‏",
   "script": "indopak",
-  "translation": "Seek help through patience and prayer. It is indeed exacting, but not for those who are humble in their hearts,",
+  "translation": "who bear in mind that they are to meet their Lord, and that to Him they are to return.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-03T12:00:18+00:00"
+  "generated_at": "2026-11-04T12:15:16+00:00"
 }

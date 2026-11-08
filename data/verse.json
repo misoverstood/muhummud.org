@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-07",
-  "verse_key": "2:49",
+  "date": "2026-11-08",
+  "verse_key": "2:50",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 49,
-  "position": 56,
+  "ayah": 50,
+  "position": 57,
   "total": 6236,
-  "arabic": "وَاِذۡ نَجَّيۡنٰکُمۡ مِّنۡ اٰلِ فِرۡعَوۡنَ يَسُوۡمُوۡنَكُمۡ سُوۡٓءَ الۡعَذَابِ يُذَبِّحُوۡنَ اَبۡنَآءَكُمۡ وَيَسۡتَحۡيُوۡنَ نِسَآءَكُمۡ​ؕ وَفِىۡ ذٰلِكُمۡ بَلَاۤءٌ مِّنۡ رَّبِّكُمۡ عَظِيۡمٌ‏",
+  "arabic": "وَاِذۡ فَرَقۡنَا بِكُمُ الۡبَحۡرَ فَاَنۡجَيۡنٰکُمۡ وَاَغۡرَقۡنَآ اٰلَ فِرۡعَوۡنَ وَاَنۡتُمۡ تَنۡظُرُوۡنَ‏",
   "script": "indopak",
-  "translation": "(Remember) when We delivered you from the people of Pharaoh! They had been inflicting on you grievous torment, slaughtering your sons and leaving your women alive. In all that, there was a great trial from your Lord.",
+  "translation": "And (recall) when We parted the sea for you; then We saved you, and drowned the people of Pharaoh while you were looking on!",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-07T11:09:09+00:00"
+  "generated_at": "2026-11-08T11:20:48+00:00"
 }

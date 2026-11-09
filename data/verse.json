@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-08",
-  "verse_key": "2:50",
+  "date": "2026-11-09",
+  "verse_key": "2:51",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 50,
-  "position": 57,
+  "ayah": 51,
+  "position": 58,
   "total": 6236,
-  "arabic": "وَاِذۡ فَرَقۡنَا بِكُمُ الۡبَحۡرَ فَاَنۡجَيۡنٰکُمۡ وَاَغۡرَقۡنَآ اٰلَ فِرۡعَوۡنَ وَاَنۡتُمۡ تَنۡظُرُوۡنَ‏",
+  "arabic": "وَاِذۡ وٰعَدۡنَا مُوۡسٰٓى اَرۡبَعِيۡنَ لَيۡلَةً ثُمَّ اتَّخَذۡتُمُ الۡعِجۡلَ مِنۡۢ بَعۡدِهٖ وَاَنۡـتُمۡ ظٰلِمُوۡنَ‏",
   "script": "indopak",
-  "translation": "And (recall) when We parted the sea for you; then We saved you, and drowned the people of Pharaoh while you were looking on!",
+  "translation": "And when We appointed forty nights for Mūsā, then you took the calf (as God) thereafter, and you were unjust.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-08T11:20:48+00:00"
+  "generated_at": "2026-11-09T12:59:27+00:00"
 }

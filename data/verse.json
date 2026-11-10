@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-09",
-  "verse_key": "2:51",
+  "date": "2026-11-10",
+  "verse_key": "2:52",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 51,
-  "position": 58,
+  "ayah": 52,
+  "position": 59,
   "total": 6236,
-  "arabic": "وَاِذۡ وٰعَدۡنَا مُوۡسٰٓى اَرۡبَعِيۡنَ لَيۡلَةً ثُمَّ اتَّخَذۡتُمُ الۡعِجۡلَ مِنۡۢ بَعۡدِهٖ وَاَنۡـتُمۡ ظٰلِمُوۡنَ‏",
+  "arabic": "ثُمَّ عَفَوۡنَا عَنۡكُمۡ مِّنۡۢ بَعۡدِ ذٰلِكَ لَعَلَّكُمۡ تَشۡكُرُوۡنَ‏",
   "script": "indopak",
-  "translation": "And when We appointed forty nights for Mūsā, then you took the calf (as God) thereafter, and you were unjust.",
+  "translation": "Yet We pardoned you, even after that, so that you may show gratitude.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-09T12:59:27+00:00"
+  "generated_at": "2026-11-10T12:44:31+00:00"
 }

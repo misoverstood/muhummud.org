@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-10",
-  "verse_key": "2:52",
+  "date": "2026-11-11",
+  "verse_key": "2:53",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 52,
-  "position": 59,
+  "ayah": 53,
+  "position": 60,
   "total": 6236,
-  "arabic": "ثُمَّ عَفَوۡنَا عَنۡكُمۡ مِّنۡۢ بَعۡدِ ذٰلِكَ لَعَلَّكُمۡ تَشۡكُرُوۡنَ‏",
+  "arabic": "وَاِذۡ اٰتَيۡنَا مُوۡسَى الۡكِتٰبَ وَالۡفُرۡقَانَ لَعَلَّكُمۡ تَهۡتَدُوۡنَ‏ ﻿﻿",
   "script": "indopak",
-  "translation": "Yet We pardoned you, even after that, so that you may show gratitude.",
+  "translation": "Then We gave Mūsā the Book and the Criterion (of right and wrong), so that you may find the right path.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-10T12:44:31+00:00"
+  "generated_at": "2026-11-11T11:56:02+00:00"
 }

@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-12",
-  "verse_key": "2:54",
+  "date": "2026-11-13",
+  "verse_key": "2:55",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 54,
-  "position": 61,
+  "ayah": 55,
+  "position": 62,
   "total": 6236,
-  "arabic": "وَاِذۡ قَالَ مُوۡسٰى لِقَوۡمِهٖ يٰقَوۡمِ اِنَّكُمۡ ظَلَمۡتُمۡ اَنۡفُسَکُمۡ بِاتِّخَاذِكُمُ الۡعِجۡلَ فَتُوۡبُوۡآ اِلٰى بَارِٮِٕكُمۡ فَاقۡتُلُوۡٓا اَنۡفُسَكُمۡؕ ذٰ لِكُمۡ خَيۡرٌ لَّـكُمۡ عِنۡدَ بَارِٮِٕكُمۡؕ فَتَابَ عَلَيۡكُمۡ​ؕ اِنَّهٗ هُوَ التَّوَّابُ الرَّحِيۡمُ‏",
+  "arabic": "وَاِذۡ قُلۡتُمۡ يٰمُوۡسٰى لَنۡ نُّؤۡمِنَ لَـكَ حَتّٰى نَرَى اللّٰهَ جَهۡرَةً فَاَخَذَتۡكُمُ الصّٰعِقَةُ وَاَنۡتُمۡ تَنۡظُرُوۡنَ‏",
   "script": "indopak",
-  "translation": "When Mūsā said to his people: “My people, you have wronged yourselves by your taking the calf (as God). So, turn in repentance to your Creator, and slay yourselves. That will be better for you in the sight of your Creator”. Then, He accepted your repentance. Indeed He is the Most-Relenting, the Very-Merciful.",
+  "translation": "When you said, “Mūsā, we will never believe you till we see Allah openly!” So, the thunderbolt took you while you were looking on.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-12T12:52:32+00:00"
+  "generated_at": "2026-11-13T12:19:49+00:00"
 }

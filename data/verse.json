@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-13",
-  "verse_key": "2:55",
+  "date": "2026-11-14",
+  "verse_key": "2:56",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 55,
-  "position": 62,
+  "ayah": 56,
+  "position": 63,
   "total": 6236,
-  "arabic": "وَاِذۡ قُلۡتُمۡ يٰمُوۡسٰى لَنۡ نُّؤۡمِنَ لَـكَ حَتّٰى نَرَى اللّٰهَ جَهۡرَةً فَاَخَذَتۡكُمُ الصّٰعِقَةُ وَاَنۡتُمۡ تَنۡظُرُوۡنَ‏",
+  "arabic": "ثُمَّ بَعَثۡنٰكُمۡ مِّنۡۢ بَعۡدِ مَوۡتِكُمۡ لَعَلَّکُمۡ تَشۡكُرُوۡنَ‏ ﻿﻿",
   "script": "indopak",
-  "translation": "When you said, “Mūsā, we will never believe you till we see Allah openly!” So, the thunderbolt took you while you were looking on.",
+  "translation": "Then, We raised you up after your death, so that you might show gratitude.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-13T12:19:49+00:00"
+  "generated_at": "2026-11-14T11:35:06+00:00"
 }

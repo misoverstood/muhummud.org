@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-14",
-  "verse_key": "2:56",
+  "date": "2026-11-15",
+  "verse_key": "2:57",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 56,
-  "position": 63,
+  "ayah": 57,
+  "position": 64,
   "total": 6236,
-  "arabic": "ثُمَّ بَعَثۡنٰكُمۡ مِّنۡۢ بَعۡدِ مَوۡتِكُمۡ لَعَلَّکُمۡ تَشۡكُرُوۡنَ‏ ﻿﻿",
+  "arabic": "وَظَلَّلۡنَا عَلَيۡکُمُ الۡغَمَامَ وَاَنۡزَلۡنَا عَلَيۡكُمُ الۡمَنَّ وَالسَّلۡوٰى​ؕ كُلُوۡا مِنۡ طَيِّبٰتِ مَا رَزَقۡنٰكُمۡ​ؕ وَمَا ظَلَمُوۡنَا وَلٰـكِنۡ كَانُوۡآ اَنۡفُسَهُمۡ يَظۡلِمُوۡنَ‏",
   "script": "indopak",
-  "translation": "Then, We raised you up after your death, so that you might show gratitude.",
+  "translation": "And We made the cloud give you shade, and sent down to you Mann and Salwā: “Eat of the good things We have provided to you”. And they (by their ingratitude) did Us no harm, but were harming only themselves.",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-14T11:35:06+00:00"
+  "generated_at": "2026-11-15T12:00:19+00:00"
 }

@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-22",
-  "verse_key": "2:64",
+  "date": "2026-11-23",
+  "verse_key": "2:65",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 64,
-  "position": 71,
+  "ayah": 65,
+  "position": 72,
   "total": 6236,
-  "arabic": "ثُمَّ تَوَلَّيۡتُمۡ مِّنۡۢ بَعۡدِ ذٰلِكَ​​ۚ فَلَوۡلَا فَضۡلُ اللّٰهِ عَلَيۡكُمۡ وَرَحۡمَتُهٗ لَـكُنۡتُمۡ مِّنَ الۡخٰسِرِيۡنَ‏",
+  "arabic": "وَلَقَدۡ عَلِمۡتُمُ الَّذِيۡنَ اعۡتَدَوۡا مِنۡكُمۡ فِىۡ السَّبۡتِ فَقُلۡنَا لَهُمۡ كُوۡنُوۡا قِرَدَةً خَاسِـِٔـيۡنَ ​ۚ‏",
   "script": "indopak",
-  "translation": "Then even after that, you turned away. So, had it not been for the grace of Allah upon you, and His mercy, you would have been among the losers.",
+  "translation": "Certainly you have knowledge of those among you who transgressed in (the matter of) the Sabbath. We said to them, “Become apes, abased.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-22T12:40:23+00:00"
+  "generated_at": "2026-11-23T14:51:40+00:00"
 }

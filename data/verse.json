@@ -1,18 +1,18 @@
 {
-  "date": "2026-11-24",
-  "verse_key": "2:66",
+  "date": "2026-11-25",
+  "verse_key": "2:67",
   "surah": {
     "number": 2,
     "name_arabic": "البقرة",
     "name_simple": "Al-Baqarah",
     "translated_name": "The Cow"
   },
-  "ayah": 66,
-  "position": 73,
+  "ayah": 67,
+  "position": 74,
   "total": 6236,
-  "arabic": "فَجَعَلۡنٰهَا نَكٰلاً لِّمَا بَيۡنَ يَدَيۡهَا وَمَا خَلۡفَهَا وَمَوۡعِظَةً لِّلۡمُتَّقِيۡنَ‏",
+  "arabic": "وَاِذۡ قَالَ مُوۡسٰى لِقَوۡمِهٖۤ اِنَّ اللّٰهَ يَاۡمُرُكُمۡ اَنۡ تَذۡبَحُوۡا بَقَرَةً ​ ؕ قَالُوۡآ اَتَتَّخِذُنَا هُزُوًۡا ​ؕ قَالَ اَعُوۡذُ بِاللّٰهِ اَنۡ اَكُوۡنَ مِنَ الۡجٰـهِلِيۡنَ‏",
   "script": "indopak",
-  "translation": "Thus, We made it a deterrent for those around and (those who came) after them - and a lesson for the God-fearing.",
+  "translation": "When Mūsā said to his people, “Allah commands you to slaughter a cow”, they said, “Are you making fun of us?” He said, “I seek refuge with Allah from being one of the ignorant.”",
   "translation_source": "Mufti Taqi Usmani",
-  "generated_at": "2026-11-24T14:57:30+00:00"
+  "generated_at": "2026-11-25T14:32:23+00:00"
 }
